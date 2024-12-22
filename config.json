@@ -1,0 +1,32 @@
+{
+  "database_name": "datasets",
+  "host": "localhost",
+  "user": "root",
+  "password": "root",
+  "port": 3306,
+
+  "input_data_dir": "shared/datasets",
+  "output_dir": "shared/output",
+  "output_filename": "output.ndjson",
+
+  "solution": 1,
+
+  "sql_source": "create-db-procedures.sql",
+
+  "procedures": {
+    "import_article": "InsertArticles",
+    "import_relationship": "InsertRelationships",
+    "import_tag": "InsertTags",
+    "transform": "CombineData",
+    "export": "GetDataFinal",
+    "transform_export": "TransformExport"
+  },
+
+  "schema": [
+    { "output_field": "uuid", "json_key": "article_uuid" },
+    { "output_field": "title", "json_key": "article_title" },
+    { "output_field": "abstract", "json_key": "article_abstract" },
+    { "output_field": "tags", "json_key": "tags" },
+    { "output_field": "relationships", "json_key": "relationships" }
+  ]
+}
