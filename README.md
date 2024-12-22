@@ -1,6 +1,7 @@
-# Problem - 1
+# Problem - Data pipeline task (Automation)
 
-For clarity and organization, my commits are stored in a separate repository. If you need access, please email me at hadysadegh@gmail.com, and I will grant you access.
+This project aims to automatically read the data from .tsv files, combine them, and export them in an output folder.
+
 
 ## Running the Solution
 
